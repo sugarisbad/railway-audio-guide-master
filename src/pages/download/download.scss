@@ -1,0 +1,28 @@
+page-download {
+  .main-container {
+    background-color: #563847;
+  }
+
+  .scroll-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .loading-gif {
+    display: flex;
+  }
+
+  .counter {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: color($colors, "text-active");
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .cancel-button {
+    margin-left: 10%;
+    width: 80%;
+  }
+}

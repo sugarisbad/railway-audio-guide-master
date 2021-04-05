@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar class="main-toolbar">
+    <ion-buttons left>
+      <button ion-button clear (click)="openSelectLanguagePage()">
+        <ion-icon name="arrow-back" class="back-button-icon"></ion-icon>
+        {{ "MAIN_CHOOSE_LANGUAGE" | translate }}
+      </button>
+    </ion-buttons>
+
+    <ion-buttons right>
+      <button ion-button icon-only (click)="openInfoPage()">
+        <ion-icon name="information"></ion-icon>
+      </button>
+
+      <button ion-button icon-only (click)="writeToSupport()">
+        <ion-icon name="mail"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="main-container">
+  <div #imgContainer class="img-container">
+    <div *ngIf="!playNow" #railwayMap class="railway-map"></div>
+
+    <ion-slides *ngIf="playNow" class="city-slider">
+      <ion-slide class="image-slide">
+        <div class="station-image" [ngStyle]="{ 'background-image': 'url(' + base64Image + ')' }"></div>
+      </ion-slide>
+
+      <ion-slide *ngIf="text && text.length != 0" class="text-slide">
+        {{ text }}
+      </ion-slide>
+    </ion-slides>
+
+    <div *ngIf="playNow" class="img-label">{{ title }}</div>
+  </div>
+
+  <div class="map-ui" *ngIf="!playNow">
+    <div *ngIf="!playNow" class="map-buttons">
+      <button ion-button clear class="left-button" (click)="mapZoomOut()" [disabled]='zoomStep === minZoomStep'>&ndash;</button>
+      <button ion-button clear (click)="mapZoomIn()" [disabled]="zoomStep === maxZoomStep">+</button>
+    </div>
+
+    <div *ngIf="!playNow && !isPaidApp" class="img-label" (click)="openStore()"
+      [innerHTML]="'MAIN_BUY_ALL' | translate">
+    </div>
+
+    <div *ngIf="!playNow && isPaidApp && isDownloadButtonVisible" class="img-label" (click)="showDownloadAudioFilesAlert()"
+      [innerHTML]="'MAIN_DOWNLOAD_AUDIO_FILES' | translate" >
+    </div>
+  </div>
+
+  <button ion-button clear class="reverse-station-order-button" (click)="reverseStationOrder()">
+    {{ 'MAIN_REVERSE_ORDER' | translate }} <img src="assets/imgs/direction.png" />
+  </button>
+
+  <ul class="city-cards-list">
+    <li *ngFor="let city of cities; let elementIndex = index" #citiesList>
+      <city-player-card class="card-list-item" [cityAudio]="city"
+        (onPlayClick)="onPlay(elementIndex)" (onPauseClick)="onPauseClick(elementIndex)">
+      </city-player-card>
+      <div class="list-point" [ngClass]="{
+        'list-point-first': elementIndex == activeStationIndex,
+        'list-point-second': Math.abs(activeStationIndex - elementIndex) == 1
+      }"></div>
+
+      <div [ngClass]="{
+        'vertical-line': (!isStationOrderReversed && elementIndex < cities.length-1) ||
+          (isStationOrderReversed && elementIndex > 0),
+        'vertical-line-active': Math.abs(activeStationIndex - elementIndex) < 2
+      }"></div>
+    </li>
+  </ul>
+</ion-content>

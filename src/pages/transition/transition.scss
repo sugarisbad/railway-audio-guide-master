@@ -1,0 +1,11 @@
+page-transition {
+  .main-container {
+    background-color: #563847;
+  }
+
+  .scroll-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

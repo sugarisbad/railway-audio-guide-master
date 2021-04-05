@@ -1,0 +1,30 @@
+{
+  "MAIN_CHOOSE_LANGUAGE": "Choose language",
+  "MAIN_BUY_ALL": "$19.99 <span class=\"cost-title\">buy all</span>",
+  "MAIN_REVERSE_ORDER": "Reverse order",
+  "MAIN_DOWNLOAD_AUDIO_FILES": "Download all",
+
+  "MAIN_DOWNLOAD_ALERT_TITLE": "Downloading",
+  "MAIN_DOWNLOAD_ALERT_MESSAGE": "Please, bear in mind that the audio-guide downloading aboard the moving train could be hindered. You can download either all the records at once or single records. It is recommended to download the material within the conditions of satisfactory Internet connection.\n We wish you pleasant and informative listening!",
+  "MAIN_DOWNLOAD_ALERT_BUTTON_CANCEL": "Back",
+  "MAIN_DOWNLOAD_ALERT_BUTTON_DOWNLOAD": "Download all",
+
+  "MAIN_RATE_ALERT_MESSAGE": "Please give us a note",
+  "MAIN_RATE_ALERT_BUTTON_CANCEL": "Cancel",
+  "MAIN_RATE_ALERT_BUTTON_RATE": "Estimate",
+
+  "INFO_BACK_BUTTON": "Back",
+  "INFO_TITLE": "Information",
+  "INFO_REMOVE_FILES": "delete audio-files",
+
+  "DOWNLOAD_ABORT_DOWNLOADING": "Cancel",
+  "DOWNLOAD_COUNTER": "Download {{ counter }} audio-files from {{ total }}",
+  "DOWNLOAD_ALERT_ERROR_TITLE": "Error",
+  "DOWNLOAD_ALERT_ERROR_MESSAGE": "Audio-files could not be loaded",
+  "DOWNLOAD_ALERT_ERROR_BUTTON_OK": "ОК",
+
+  "SYNC_ALERT_ERROR_TITLE": "Disconnected",
+  "SYNC_ALERT_ERROR_MESSAGE": "Please, check your internet connection and start the mobile app again.",
+  "SYNC_ALERT_ERROR_BUTTON_RETRY": "Try the download again"
+
+}

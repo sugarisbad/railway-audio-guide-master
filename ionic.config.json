@@ -1,0 +1,13 @@
+{
+  "name": "railway-audio-guide",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://railway.lehabaev.ru/api"
+    }
+  ]
+}

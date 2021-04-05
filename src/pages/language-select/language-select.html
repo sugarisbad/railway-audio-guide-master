@@ -1,0 +1,28 @@
+<ion-content ion-fixed class="main-container">
+  <img class="logo" src="assets/imgs/logo.png" />
+  <img class="world-map" src="assets/imgs/map_select_lang.jpg" />
+
+  <ion-list class="languages-list" radio-group (ionChange)="onClick($event)">
+    <ion-item class="language-item">
+      <ion-label>English <img class="country-flag" src="assets/imgs/en.png" /></ion-label>
+      <ion-radio value="en"></ion-radio>
+    </ion-item>
+
+    <ion-item class="language-item">
+      <ion-label>中文 <img class="country-flag" src="assets/imgs/cn.png" /></ion-label>
+      <ion-radio value="cn"></ion-radio>
+    </ion-item>
+
+    <ion-item class="language-item">
+      <ion-label>Deutsch <img class="country-flag" src="assets/imgs/de.png" /></ion-label>
+      <img src="assets/imgs/de.png"/>
+      <ion-radio value="de"></ion-radio>
+    </ion-item>
+
+    <ion-item class="language-item">
+      <ion-label>Русский <img class="country-flag" src="assets/imgs/ru.png" /></ion-label>
+      <ion-radio value="ru"></ion-radio>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

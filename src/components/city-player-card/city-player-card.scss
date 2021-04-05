@@ -1,0 +1,70 @@
+city-player-card {
+  display: block;
+
+  .card-root {
+    background: transparent !important;
+    box-shadow: 0 0;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: calc(100% - 12px);
+  }
+
+  .card-header {
+    padding: 0;
+    padding-bottom: 8px;
+    color: color($colors, "text-active");
+  }
+
+  .card-content {
+    padding: 0;
+  }
+
+  .loading-icon {
+    animation: rotation 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+
+    @keyframes rotation {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(359deg); }
+    }
+  }
+
+  .description {
+    color: color($colors, "text-active");
+    font-size: 1.2rem;
+  }
+
+  .player-controls {
+    background-color: transparent;
+  }
+
+  .player-controls-active {
+    color: color($colors, "text-active");
+  }
+
+  .player-controls-inactive {
+    color: color($colors, "text-inactive");
+  }
+
+  .button-locked {
+    margin-right: 25px !important;
+    width: 15px;
+  }
+
+  .player-range {
+    background-color: #65464e;
+    padding: 2px 20px;
+
+    .range-knob-handle {
+      display: none;
+    }
+
+    .range-bar {
+      height: 2px;
+      background: #573647;
+    }
+
+    .range-bar-active {
+      background: #e5d3c7;
+    }
+  }
+}

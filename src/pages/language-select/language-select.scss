@@ -1,0 +1,80 @@
+page-language-select {
+  .world-map {
+    position: absolute;
+    top: 25px;
+  }
+
+  .logo {
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+    left: 50%;
+    margin-left: -75px;
+    top: 16px;
+  }
+
+  .country-flag {
+    width: 48px;
+    position: absolute;
+    right: 56px;
+    top: 18px;
+  }
+
+  .main-container {
+    background-color: color($colors, "background");
+  }
+
+  .languages-list {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 250px;
+  }
+
+  .language-item {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    padding-left: 0;
+    color: white;
+
+    .item-inner {
+      padding-left: 16px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border: 1px solid color($colors, "background") !important;
+    }
+
+    &.item-radio {
+      .radio-icon {
+          width: 24px;
+          height: 24px;
+          border-radius: 100%;
+          border: 1.25px solid color($colors, "text-inactive");
+      }
+    }
+
+    &.item-radio-checked {
+      ion-label {
+        color: white;
+      }
+
+      .radio-icon {
+          border: 0;
+          background-color: color($colors, "background");
+      }
+
+      .radio-inner {
+        border-color: color($colors, "text-inactive");
+        left: 10px;
+        top: 5px;
+      }
+    }
+  }
+
+  .item-radio {
+    background-color: #6f5350;
+  }
+
+  .item-radio-checked {
+    background-color: #65464e;
+  }
+}

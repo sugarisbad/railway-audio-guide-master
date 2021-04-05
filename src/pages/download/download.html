@@ -1,0 +1,10 @@
+<ion-content ion-fixed class="main-container">
+  <img src="assets/imgs/mishka.gif">
+  <p translate [translateParams]="{counter: counter, total: total}" class="counter">
+    DOWNLOAD_COUNTER
+  </p>
+
+  <button ion-button outline class="cancel-button" color="text-active" (click)="abortDownloading()">
+    {{ "DOWNLOAD_ABORT_DOWNLOADING" | translate }}
+  </button>
+</ion-content>

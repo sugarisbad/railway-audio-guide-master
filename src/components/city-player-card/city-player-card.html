@@ -1,0 +1,32 @@
+<ion-card class="card-root">
+  <ion-card-header class="card-header">
+    {{ cityAudio.title }}
+  </ion-card-header>
+
+  <ion-card-content class="card-content">
+    <ion-item class="player-controls" [ngClass]="{
+      'player-controls-active': isPlaying || isPaused,
+      'player-controls-inactive': !isPlaying && !isPaused
+    }">
+      <ion-icon *ngIf="!isDownloading && !isPlaying && cityAudio.audioId != undefined"
+        item-left name="play" (click)="play()" >
+      </ion-icon>
+
+      <ion-icon *ngIf="!isDownloading && isPlaying && cityAudio.audioId != undefined"
+        item-left name="pause" (click)="pause()">
+      </ion-icon>
+
+      <ion-icon *ngIf="isDownloading" item-left name="sync" class="loading-icon"></ion-icon>
+
+      <img item-left class="button-locked" *ngIf="cityAudio.audioId == undefined" src="assets/imgs/locked.png" />
+
+      <ion-range class="player-range" disabled="{{!isPlaying && !isPaused}}"
+        [(ngModel)]="audioProgress" (ionFocus)="onRangeFocus()" (ionBlur)="onRangeBlur()">
+      </ion-range>
+    </ion-item>
+
+    <p *ngIf="description && description.length != 0 && (isPlaying || isPaused)" class="description">
+      {{ description }}
+    </p>
+  </ion-card-content>
+</ion-card>

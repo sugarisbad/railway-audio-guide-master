@@ -1,0 +1,29 @@
+{
+  "MAIN_CHOOSE_LANGUAGE": "Sprachauswahl",
+  "MAIN_BUY_ALL": "1,000 &#8381; <span class=\"cost-title\">kaufen</span>",
+  "MAIN_REVERSE_ORDER": "Konsequenz",
+  "MAIN_DOWNLOAD_AUDIO_FILES": "downloaden",
+
+  "MAIN_DOWNLOAD_ALERT_TITLE": "Laden",
+  "MAIN_DOWNLOAD_ALERT_MESSAGE": "Liebe Reisende! Bitte beachten Sie, dass Download des Audioführers im Wagen des fahrenden Zugs problematisch sein kann. Sie könnten entweder alle Audio gleichzeitig oder jedes Audio einzeln herunterladen. Wir empfehlen Ihnen alle Daten herunterladen nur wenn eine gute Internetverbindung herstellt.\n Viel Spaß beim Zuhören!",
+  "MAIN_DOWNLOAD_ALERT_BUTTON_CANCEL": "Zurück",
+  "MAIN_DOWNLOAD_ALERT_BUTTON_DOWNLOAD": "Download alles",
+
+  "MAIN_RATE_ALERT_MESSAGE": "Mobile App bewerten",
+  "MAIN_RATE_ALERT_BUTTON_CANCEL": "Zurück",
+  "MAIN_RATE_ALERT_BUTTON_RATE": "Bewerten",
+
+  "INFO_BACK_BUTTON": "Zurück",
+  "INFO_TITLE": "Information",
+  "INFO_REMOVE_FILES": "löschen",
+
+  "DOWNLOAD_ABORT_DOWNLOADING": "Zurücksetzen",
+  "DOWNLOAD_COUNTER": "Download {{ counter }} Audio aus {{ total }}",
+  "DOWNLOAD_ALERT_ERROR_TITLE": "Fehler",
+  "DOWNLOAD_ALERT_ERROR_MESSAGE": "Einige files kann man nicht downloaden",
+  "DOWNLOAD_ALERT_ERROR_BUTTON_OK": "ОК",
+
+  "SYNC_ALERT_ERROR_TITLE": "Keine Internetverbindung",
+  "SYNC_ALERT_ERROR_MESSAGE": "Prüfen Sie bitte die Internetverbindung und dann versuchen Sie nochmals.",
+  "SYNC_ALERT_ERROR_BUTTON_RETRY": "Wiederholen"
+}

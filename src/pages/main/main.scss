@@ -1,0 +1,189 @@
+page-main {
+  .main-toolbar {
+    min-height: 0;
+    padding: 0 4px;
+
+    .toolbar-background {
+      background-color: color($colors, "background");
+    }
+
+    button {
+      color: color($colors, "text-blocked");
+    }
+
+    .back-button-icon {
+      padding-right: 8px;
+    }
+  }
+
+  .img-container {
+    position: relative;
+    overflow: auto;
+    max-width: 100%;
+    height: 250px;
+    box-shadow: inset 0px 11px 8px -10px hsla(329, 20%, 15%, 1),
+            inset 0px -11px 8px -10px hsla(329, 20%, 15%, 1);
+    -webkit-overflow-scrolling: initial; // fix ios hidden top/bottom shadow
+
+    .railway-map {
+      background: url("../assets/imgs/map.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      z-index: -1;
+
+      width: 2049px;
+      height: 1251px;
+    }
+
+    .station-image {
+      height: 100%;
+      background-size: cover;
+    }
+
+    .city-slider {
+      height: calc(100% - 45px);
+    }
+
+    .image-slide {
+      .slide-zoom {
+        height: 100%;
+      }
+    }
+
+    .text-slide {
+      .slide-zoom {
+        color: color($colors, "text-active");
+      }
+    }
+  }
+
+  .map-ui {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-color: "#0000004d";
+    top: 0;
+    pointer-events: none;
+
+    .img-label {
+      position: absolute;
+      bottom: 0;
+      pointer-events: auto;
+      z-index: 10;
+    }
+
+    .map-buttons {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      border: 1px solid color($colors, "text-inactive");
+      border-radius: 5px;
+      pointer-events: auto;
+
+      button {
+        font-size: 2em;
+        height: auto;
+        margin: 0;
+        color: color($colors, "text-inactive");
+        padding: 0 15px;
+        height: 30px;
+
+        .button-inner {
+          display: block;
+        }
+      }
+
+      .left-button {
+        border-right: 1px solid color($colors, "text-inactive");
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+
+  .img-label {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1.8rem;
+    color: color($colors, "background");
+    font-weight: 800;
+    text-transform: uppercase;
+
+    background: rgb(188,164,138);
+    background: linear-gradient(135deg, rgba(188,164,138,1) 0%, rgba(183,158,134,1) 49%, rgba(151,124,108,1) 60%, rgba(137,109,97,1) 80%, rgba(137,109,97,1) 100%);
+
+    .cost-title {
+      font-weight: 400;
+    }
+  }
+
+  .reverse-station-order-button {
+    position: absolute;
+    right: 0;
+    padding-top: 5px;
+    color: color($colors, "text-inactive");
+    z-index: 100;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+    img {
+      width: 18px;
+      margin-left: 10px;
+    }
+  }
+
+  .main-container {
+    background-color: color($colors, "background");
+  }
+
+  .card-list-item {
+    position: relative;
+    transition: top 500ms;
+    top: 0px;
+  }
+
+  .city-cards-list {
+    li {
+      position: relative;
+      top: 0px;
+      transition: top 500ms;
+    }
+
+    list-style: none;
+    padding-left: 28px;
+
+    .list-point {
+      position: absolute;
+      top: 6px;
+      left: -14px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: color($colors, "text-blocked");
+    }
+
+    .list-point-first {
+      background-color: color($colors, "text-active");
+    }
+
+    .list-point-second {
+      background-color: color($colors, "text-inactive");
+    }
+
+    .vertical-line {
+      position: absolute;
+      height: calc(100% - 4px);
+      width: 2px;
+      background-color: color($colors, "text-blocked");
+      border-radius: 2px;
+      left: -11px;
+      top: 18px;
+    }
+
+    .vertical-line-active {
+      background-color: color($colors, "text-inactive");
+    }
+  }
+}

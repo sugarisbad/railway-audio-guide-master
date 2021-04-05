@@ -1,0 +1,27 @@
+page-info {
+  .info-toolbar {
+    .title {
+      div {
+        color: color($colors, "text-blocked");
+      }
+    }
+
+    .toolbar-background {
+      background-color: color($colors, "background");
+    }
+
+    button {
+      color: color($colors, "text-blocked");
+    }
+
+    .back-button-icon {
+      padding-right: 8px;
+    }
+  }
+
+  .info-container {
+    background-color: color($colors, "background");
+    color: color($colors, "text-active");
+    font-size: 1.5rem;
+  }
+}

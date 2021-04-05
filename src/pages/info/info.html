@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar class="info-toolbar">
+    <ion-buttons left>
+      <button ion-button clear (click)="backToMainPage()">
+        <ion-icon name="arrow-back" class="back-button-icon"></ion-icon>
+        {{ "INFO_BACK_BUTTON" | translate }}
+      </button>
+    </ion-buttons>
+
+    <ion-title class="title">{{ "INFO_TITLE" | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="info-container">
+  <div #content></div>
+</ion-content>
+
+<ion-footer padding>
+  <button ion-button block outline color="text-active" (click)="clearStorage()">
+    {{ "INFO_REMOVE_FILES" | translate }}
+  </button>
+</ion-footer>

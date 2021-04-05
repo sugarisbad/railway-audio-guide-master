@@ -1,0 +1,29 @@
+{
+  "MAIN_CHOOSE_LANGUAGE": "Выбор языка",
+  "MAIN_BUY_ALL": "1,000 &#8381; <span class=\"cost-title\">Оплатить все</span>",
+  "MAIN_REVERSE_ORDER": "Изменить порядок",
+  "MAIN_DOWNLOAD_AUDIO_FILES": "Скачать аудиофайлы",
+
+  "MAIN_DOWNLOAD_ALERT_TITLE": "Загрузка аудио файлов",
+  "MAIN_DOWNLOAD_ALERT_MESSAGE": "Помните, что скачивание аудиогида в вагоне движущегося поезда может быть затруднено. Вы можете либо скачать все записи сразу, либо по-отдельности. Рекомендуем Вам скачивать материалы в условиях хорошего интернет-соединения.\n Желаем вам приятного и познавательного прослушивания!",
+  "MAIN_DOWNLOAD_ALERT_BUTTON_CANCEL": "Назад",
+  "MAIN_DOWNLOAD_ALERT_BUTTON_DOWNLOAD": "Скачать всё",
+
+  "MAIN_RATE_ALERT_MESSAGE": "Хотите оценить приложение?",
+  "MAIN_RATE_ALERT_BUTTON_CANCEL": "Отмена",
+  "MAIN_RATE_ALERT_BUTTON_RATE": "Оценить",
+
+  "INFO_BACK_BUTTON": "Назад",
+  "INFO_TITLE": "Информация",
+  "INFO_REMOVE_FILES": "Удалить аудио файлы",
+
+  "DOWNLOAD_ABORT_DOWNLOADING": "Отмена",
+  "DOWNLOAD_COUNTER": "Загружено {{ counter }} аудио файлов из {{ total }}",
+  "DOWNLOAD_ALERT_ERROR_TITLE": "Ошибка",
+  "DOWNLOAD_ALERT_ERROR_MESSAGE": "Не удалось загрузить часть файлов",
+  "DOWNLOAD_ALERT_ERROR_BUTTON_OK": "ОК",
+
+  "SYNC_ALERT_ERROR_TITLE": "Соединение отсутствует",
+  "SYNC_ALERT_ERROR_MESSAGE": "Для работы приложения необходимо подключене к сети. Проверьте подключение и запустите приложение снова.",
+  "SYNC_ALERT_ERROR_BUTTON_RETRY": "Повторить"
+}

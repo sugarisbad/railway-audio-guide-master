@@ -1,0 +1,26 @@
+{
+    "ios": {
+        "debug": {
+            "buildFlag": ["-UseModernBuildSystem=0"]
+        },
+        "release": {
+            "buildFlag": ["-UseModernBuildSystem=0"]
+        }
+    },
+    "android": {
+        "debug": {
+          "keystore": "./android-key/railway.keystore",
+          "storePassword": "bD8D23r5d4vNXcUv",
+          "alias": "railway2",
+          "password" : "bD8D23r5d4vNXcUv",
+          "keystoreType": ""
+        },
+        "release": {
+            "keystore": "./android-key/railway.keystore",
+            "storePassword": "bD8D23r5d4vNXcUv",
+            "alias": "railway1",
+            "password" : "bD8D23r5d4vNXcUv",
+            "keystoreType": ""
+        }
+    }
+}
